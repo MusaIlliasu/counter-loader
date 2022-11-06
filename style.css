@@ -1,0 +1,49 @@
+* {box-sizing: border-box;scroll-behavior: smooth;}
+body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-x: hidden;
+}
+
+.container {width: 80%;margin: 0 auto;}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(to right, red -100%, purple 50%, dodgerblue 200%);
+    /* background: radial-gradient(red -50%, purple 40%, dodgerblue 200%); */
+    color: white;
+}
+
+.counter_container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 60%;
+}
+
+.counter {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+}
+.counter .icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+.counter .icon img {width: 100%;height: 100%;object-fit: cover;}
+.counter .count {font-size: 2rem;margin: 8px 0;}
+.counter p {font-size: 1rem;margin: 8px 0;}
+
+@media screen and (min-width: 650px) {
+    .counter_container {flex-direction: row;}
+}
